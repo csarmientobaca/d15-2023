@@ -5,7 +5,7 @@ const Trypage = () => {
     return (
         <h1>
             hi this is try page
-            <Link path="/" e>
+            <Link to="/">
                 React-Boots
             </Link>
 

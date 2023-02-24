@@ -1,17 +1,15 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'react-bootstrap';
-import { BrowserRouter, Link, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Trypage from './components/Trypage';
-
+import Home from "./components/Home"
 
 
 function App() {
-  // const navigate = useNavigate()
   return (
     <BrowserRouter>
-
       <Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/try' element={<Trypage />} />
       </Routes>
     </BrowserRouter >
